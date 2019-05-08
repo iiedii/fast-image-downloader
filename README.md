@@ -29,7 +29,7 @@ In this file, each line is a URL of an image with an image ID in the format of `
 
 **[ImageRecordRange]**
 
-Say you need to download 1 million images, you want to split the task by 100,000 URLs for each downloading process. The *ImageRecordRange* for the first process is 1-100000; second process is 100001-200000; and so on. You may start 5-10 downloading processes altogether, depending on your network speed.
+Say you need to download 1 million images, you want to split the task by 100,000 URLs for each downloading process. The *ImageRecordRange* for the first process is 1-100000; second process is 100001-200000; and so on. You may start 5-9 download processes altogether, depending on your network speed.
 
 **[ConcurrentThreads]**
 
@@ -37,12 +37,12 @@ The number of maximum concurrent downloads. As downloading is not CPU-intensive 
 
 **[ThreadSurvivingTime]**
 
-Tune this parameter for the multi-pass approach. For Pass 1: you can start with 12 seconds for each downloading thread. Pass 2: you may choose 20 seconds. Pass 3: try one minute or more to finish large files. Stop at an early pass if you don't want to spend time downloading the slow files.
+Tune this parameter for the multi-pass approach. At Pass 1: you can start with 12 seconds for each downloading thread. Pass 2: you may choose 20 seconds. Pass 3: try one minute or more to finish large files. Stop at an early pass if you don't want to spend time downloading the slow files. Note that optimal settings depend on your network speed.
 
 **[IsTryFailedDownload]**
 
-This option is handy for retrying links that were reported to have *FileNotExist* or other errors. Note that time-out links will always be retried in a new pass.
+This option is handy for retrying links that had *FileNotExist* or other errors. Note that links that timed out in the previous pass will always be retried in a new pass.
 
 **[IsFastValidation]**
 
-Set true if you have limited computational resources. By default (false), it tries to open each downloaded file as an image for validation. This can be rather time-consuming.
+Set true if you have limited computational resources. By default (false), it tries to open each downloaded file as an image for validation. This can be rather time-consuming but worth to do if you need to ensure every downloaded image is intact.
