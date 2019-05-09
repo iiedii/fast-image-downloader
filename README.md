@@ -1,7 +1,7 @@
 # Fast and Robust Image Downloader
 A tool suitable for downloading millions of images given a list of image URLs — a common task in image-related research.
 
-I developed this tool to facilitate my own research. In contrast to a general purpose downloader, such as *[wget](https://www.gnu.org/software/wget/)*, this tool has multiple benefits designed for large-scale image downloading within the shortest possible time.
+I developed this tool to facilitate my own research. In contrast to a general purpose downloader, such as *[wget](https://www.gnu.org/software/wget/)*, this tool has multiple benefits designed for large-scale image downloading within the shortest possible time. It is not difficult to process 2 million small images per day.
 
 -----------------------------------
 
