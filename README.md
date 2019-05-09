@@ -21,7 +21,7 @@ I developed this tool to facilitate my own research. In contrast to a general pu
 
 ## Settings
 
-All settings are configured in *config.ini* at the same path along with the executable. The followings are the important parameters.
+All settings are configured in *[config.ini](bin/config.ini)* at the same path along with the executable. The followings are the important parameters.
 
 **[UrlListFile]**
 
@@ -37,7 +37,7 @@ The number of maximum concurrent downloads. As downloading is not CPU-intensive 
 
 **[ThreadSurvivingTime]**
 
-Tune this parameter for the multi-pass approach. At Pass 1: you can start with 12 seconds for each downloading thread. Pass 2: you may choose 20 seconds. Pass 3: try one minute or more to finish large files. Stop at an early pass if you don't want to spend time downloading the slow files. Note that optimal settings depend on your network speed.
+Tune this parameter for the multi-pass approach. At Pass 1: you can start with 12 seconds for each downloading thread. Pass 2: you may choose 20 seconds. Pass 3: try one minute or more to finish large files. Stop at an early pass if you don't want to spend time downloading the slow files. Note that the optimal settings depend on your network speed. Watch SUCC:TOUT rate.
 
 **[IsTryFailedDownload]**
 
