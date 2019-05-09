@@ -47,6 +47,6 @@ This option is handy for retrying links that had *FileNotExist* or other errors.
 
 Set true if you have limited computational resources. By default (false), it tries to open each downloaded file as an image for validation. This can be rather time-consuming but worth to do if you need to ensure every download is intact.
 
-## Try yourself
+## Try Yourself
 
 A pre-compiled binary with sample URLs and configuration can be found **[HERE](bin/)**. Just run it!
